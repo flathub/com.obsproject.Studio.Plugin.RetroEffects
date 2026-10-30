@@ -17,7 +17,7 @@ modules:
       - -DCMAKE_INSTALL_LIBDIR=lib
       - -DCMAKE_COMPILE_WARNING_AS_ERROR=OFF
     build-commands:
-      - cmake --install . --component Legacy
+      - cmake --install . --component Modern
     post-install:
       - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ${FLATPAK_BUILDER_BUILDDIR}/${FLATPAK_ID}.metainfo.xml
     sources:
